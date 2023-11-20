@@ -1,13 +1,15 @@
 import React from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import logo from "./images/logo.png";
+
+import "./navbar.css";
 
 const Navbar = () => {
   return (
     <div className="header">
       <nav className="navbar">
         <a href="/" className="logo">
-          <img src={logo} alt="Logo" width={70} />
+          <img src={logo} alt="Logo" width={80} />
         </a>
         <div className="hamburger">
           <FaBars />
@@ -17,13 +19,13 @@ const Navbar = () => {
             <a href="/">Home</a>
           </li>
           <li className="nav-item">
-            <a href="/">Home</a>
+            <a href="/">About</a>
           </li>
           <li className="nav-item">
-            <a href="/">Home</a>
+            <a href="/">Testimonials</a>
           </li>
           <li className="nav-item">
-            <a href="/">Home</a>
+            <a href="/">Demo</a>
           </li>
         </ul>
       </nav>
